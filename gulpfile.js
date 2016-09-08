@@ -31,7 +31,7 @@ gulp.task('styles',function() {
   gulp.src('src/css/style.styl')
     .pipe(stylus())
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./build/css/'))
+    .pipe(gulp.dest('./public_html/css/'))
     .pipe(reload({stream:true}))
 });
 
@@ -40,7 +40,7 @@ gulp.task('styles',function() {
 */
 gulp.task('images',function(){
   gulp.src('src/css/images/**')
-    .pipe(gulp.dest('./build/css/images'))
+    .pipe(gulp.dest('./public_html/css/images'))
 });
 
 /*
@@ -81,12 +81,12 @@ function buildScript(file, watch) {
     return stream
       .on('error', handleErrors)
       .pipe(source(file))
-      .pipe(gulp.dest('./build/'))
+      .pipe(gulp.dest('./public_html/'))
       // If you also want to uglify it
       // .pipe(buffer())
       // .pipe(uglify())
       // .pipe(rename('app.min.js'))
-      // .pipe(gulp.dest('./build'))
+      // .pipe(gulp.dest('./public_html'))
       .pipe(reload({stream:true}))
   }
 
