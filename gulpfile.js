@@ -7,6 +7,8 @@ var watchify = require('watchify');
 var notify = require('gulp-notify');
 
 var stylus = require('gulp-stylus');
+var concatCSS = require('gulp-concat-css')
+
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -23,16 +25,22 @@ var historyApiFallback = require('connect-history-api-fallback')
 
 gulp.task('styles',function() {
   // move over fonts
-
   gulp.src('src/css/fonts/**.*')
-    .pipe(gulp.dest('build/css/fonts'))
+  .pipe(gulp.dest('public_html/css/fonts'))
 
-  // Compiles CSS
-  gulp.src('src/css/style.styl')
-    .pipe(stylus())
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('./public_html/css/'))
-    .pipe(reload({stream:true}))
+
+  // // Compiles CSS
+  // gulp.src('src/css/style.styl')
+  //   .pipe(stylus())
+  //   .pipe(autoprefixer())
+  //   .pipe(gulp.dest('./public_html/css/'))
+  //   .pipe(reload({stream:true}))
+
+  // concat skeleton css -- Must be after comilig css
+  gulp.src('src/css/**.css')
+  .pipe(concatCSS('style.css'))
+  .pipe(gulp.dest('public_html/css/'))
+
 });
 
 /*
