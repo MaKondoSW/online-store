@@ -8,7 +8,9 @@
   },
   "author": "@cyberpolin",
   "license": "ISC",
-  "engines" : { "node" : ">=4.0.0" },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "devDependencies": {
     "autobind-decorator": "*",
     "babel": "5.8.23",
@@ -18,6 +20,7 @@
     "connect-history-api-fallback": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
+    "gulp-concat-css": "^2.3.0",
     "gulp-notify": "*",
     "gulp-rename": "*",
     "gulp-stylus": "*",
