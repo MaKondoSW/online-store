@@ -1,0 +1,96 @@
+/**
+ * search bar Stylesheet
+ *
+ * Thanks to paulm for much of the content of the CSS buttons code
+ *
+ */
+
+/*******newsveinjoe******/
+#aaaaasearch_con {
+    float: left;
+    padding:1px 2px;
+    font-size: 1.2em;
+}
+.aaaaause_nav_bg {
+    height: 31px;
+    margin: 4px 2px;
+}
+#aaaaasearch_con li {display:inline;padding-left: 5px;}
+div.aaaaasearch_bar {
+		color:#ffffff;
+		height: 40px;
+		float:left;
+		border-radius:10px 10px 10px 10px;
+		/*background-color:#994455;*/
+		width:100%;
+}
+#aaaaashoppingcart_ps {
+	font: bold 13px Tahoma;
+	color:#ffffff;
+	font-weight:bold;
+	padding: 10px 20px 9px 18px;
+	margin-top:10px;
+}
+.aaaaamyshoppingcart {
+	float:right;
+	background-color:#792435;
+	margin-right:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top: 5px;
+	height: 25px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+  -moz-box-shadow: 5px 5px 5px #000000;
+  -webkit-box-shadow: 5px 5px 5px #000000;
+  box-shadow: 5px 5px 5px #000000;
+}
+.aaaaamyshoppingcart:hover {
+	background-color:yellow;
+}
+.aaaaamyshoppingcart a, .aaaaamyshoppingcart a {
+	color:#ffffff;
+}
+.aaaaamyshoppingcart a:hover span {
+	color:blue;
+}
+
+button.button{
+	  background: url("../images/sprites_repeat.gif") repeat-x scroll 0 -300px rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    height: 21px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: auto;
+    color: #fff;
+    border-radius: 3px;
+	}
+	
+.search_term{
+	  float: left;
+    height: 16px;
+    overflow: hidden;
+    padding: 4px 0 0;
+    width: 525px;
+	}
+
+.search_term ul.term-list li.icon-term{
+	 font: italic bold 13px Tahoma;
+    float: left;
+    line-height: 13px;
+    padding-left: 10px;
+    color: #666;
+	}
+.search_term ul.term-list li{
+	 float: left;
+    line-height: 13px;
+    padding-left: 10px;
+	}
+.search_term ul.term-list li a{
+	 color: #000;
+    font: italic 12px Tahoma;
+    text-decoration: underline;
+	}

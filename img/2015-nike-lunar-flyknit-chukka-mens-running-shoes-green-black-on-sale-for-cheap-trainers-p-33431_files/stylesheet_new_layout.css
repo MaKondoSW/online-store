@@ -1,0 +1,20 @@
+/* WinIE behavior call */
+div#k_new_categories_cat{float:left;width:100%;background:#fff;z-index:10;font-size:12px;font-family:tahoma;line-height:20px;padding-bottom:10px;}
+div#k_new_categories_cat ul{margin:0;padding:0;width:206px;z-index:5;border-left:2px solid #8b1313;border-bottom:2px solid #8b1313;border-right:2px solid #8b1313;transition:0 0}
+div#k_new_categories_cat ul.level2{background-color:#B4FFFF;z-index:7;width:364px;top:-1px;transition:width 2s;min-height:60px;}
+div#k_new_categories_cat ul.level2 li{float:left;width:168px;border:none;padding:4px;padding-left:10px;transition:all 0.1s ease-in-out 0s;}
+div#k_new_categories_cat ul.level2 li a{font-weight:100;border-left:2px solid #db4959;padding-left:10px;}
+div#k_new_categories_cat ul.level2 li a:hover{border-left:2px solid #fff;}
+div#k_new_categories_cat ul.level3{background-color:#F5F9FB;z-index:7;}
+div#k_new_categories_cat ul.level4{background-color:#F5F9FB;z-index:7;}
+div#k_new_categories_cat ul.level5{background-color:#F5F9FB;z-index:7;}
+div#k_new_categories_cat li{position:relative;list-style:none;padding:6px;background:none;border-top:1px solid #eee;padding-left:15px;}
+div#k_new_categories_cat li.submenu{background:url(../images/menu_arrow_bg.gif) no-repeat -20px -121px #fff;z-index:5;}
+div#k_new_categories_cat li:hover{background:#F3BFBF;z-index:10;}
+div#k_new_categories_cat li.submenu:hover{background:#db7474;z-index:10;}
+div#k_new_categories_cat li.submenu:hover{background:#db7474;z-index:10;}
+div#k_new_categories_cat li a{display:block;text-decoration:none;width:100%;z-index:150;color:#333;transition:all 0.15s ease-in-out 0s;}
+div#k_new_categories_cat li a:hover{color:#fff;background:none;text-decoration:none;}
+div#k_new_categories_cat ul a{width:auto;z-index:150;font-weight:bold;}
+div#k_new_categories_cat ul ul{position:absolute;top:0;left:100%;display:none;z-index:10;border:1px solid #D7E0E5;border-left:none;background:#F5F9FB;}
+div#k_new_categories_cat ul.level1 li.submenu:hover ul.level2,div#k_new_categories_cat ul.level2 li.submenu:hover ul.level3,div#k_new_categories_cat ul.level3 li.submenu:hover ul.level4,div#k_new_categories_cat ul.level4 li.submenu:hover ul.level5{display:block;z-index:10;background:#fff;border-right:2px solid #8b1313;border-top:2px solid #8b1313;border-bottom:2px solid #8b1313;}
