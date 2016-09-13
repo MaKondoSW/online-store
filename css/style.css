@@ -1,6 +1,5 @@
 header{
   height: 15em;
-  background: blue;
 }
 
 /*NavBar*/
@@ -24,7 +23,7 @@ nav ul li {
   transition: all 0.8s;
 }
 nav > ul > li > a {
-	color: #fff;
+	color: #888;
 	display: block;
 	padding: 16px;
 	text-decoration: none;
@@ -34,7 +33,7 @@ nav > ul > li:hover {
   height: 100%;
 }
 nav > ul > li:hover > a {
-  color: #888 !important;
+  color: #fff !important;
   height: 100%;
 }
 .nav1{
@@ -46,7 +45,7 @@ nav > ul > li:hover > a {
   height: 25%;
 }
 .Logo-nav > img{
-  margin: 5em 5em 0 5em;
+  margin: 2em 5em 0 5em;
 }
 .right-search{
   margin: 1em 0;
@@ -66,7 +65,7 @@ nav > ul > li:hover > a {
   color: #fff;
 }
 #cart i:hover{
-  color: #888;
+  color: #34a2e1;
 }
 #box-cart{
   background: #9c7153;
@@ -77,24 +76,209 @@ nav > ul > li:hover > a {
   justify-content: center;
   float: right;
 }
-/*Container*/
+/*CONTAINER*/
 #main-container{
-  background: red;
   height: 1000px;
 }
-#main, #main-products{
-  /*display: inline-flex;
-  justify-content: space-between;*/
+#main-offers>div, #main-products>div>div {
+  margin-top: 12px;
 }
-#main>div{
+#main-products>div>div{
+  height: 340px;
+  display: flex;
+  background: gray;
+  justify-content: center;
+  align-items: center;
+}
+#main-products>div>div>img{
+  height: 97%;
+  width:  95%;
+}
+#main-products .product-center>img{
+  height: 97%;
+  width: 97%;
+}
+#main-offers{
   height: 100px;
-  width: 200px;
+
+}
+#main-offers>div{
+  height: 55px;
+}
+/*OFFERS-MAIN*/
+.offer-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #43bbff;
+  position: relative;
+  border: 1px solid #fff;
+}
+.offer-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #34a2e1;
+  position: relative;
+  border: 1px solid #fff;
+}
+.offer-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #397496;
+  position: relative;
+  border: 1px solid #fff;
+}
+.offer-hover{
+  height: 45px;
+  width: 90%;
+}
+@-webkit-keyframes main-offers{
+  30%{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+  80%{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+}
+@keyframes main-offers{
+  30%{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+  80%{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+}
+#main-offers {
+  vertical-align: middle;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#main-offers .offer-hover:hover {
+  color: #363636;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  -webkit-animation-name:main-offers;
+  animation-name:main-offers;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+#main-offers  .offer-hover:active, .offer-hover:focus{
+  background: #397496;
+  color: #fff;
 }
 
+/*WARRANTY*/
+#warranties{
+  background: #34a2e1;
+  margin: 20px 0;
+  height: 7em;
+  display: flex;
+  align-items: center;
+}
+#warranties>div{
+  height: 85%;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  margin: .8em;
+}
+#warranties>div>i{
+  color: #fff;
+  margin: 0 .7em;
+}
+#warranties>div>p{
+  margin: 0 auto;
+}
+/*INTEREST*/
+
+#interests>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+  margin-bottom: 2em;
+  height: 210px;
+}
+
+/*FOOTER*/
 footer{
-  background: grey;
-  height: 320px;
+  margin-top: 10px;
   width: auto;
-  height: 300px;
+}
+#main-footer>div>ul{
+  list-style: none;
+}
+#main-footer>div{
+  height: 150px;
+  text-align: center;
+}
+#main-footer .pay{
+  height: 35px;
+}
+#main-footer li{
+  margin-top: 5px;
+  margin-left: 7px;
+  line-height: 10px;
+}
+#main-footer a{
+  text-decoration: none;
+  color: #363636;
+}
+#legal{
   clear: both;
+  color: white;
+  background: #363636;
+  height: 46px;
+  text-align: center;
+}
+.social-room{
+  position: relative;
+  width: 8em !important;
+  left: 5em;
+}
+.fa-square{
+  color: #34a2e1 !important;
+
+}
+.icon:hover{
+  border-radius: 30%;
+  background: #9c7153;
+  transition-duration: 0.3s;
+}
+
+/*LIST_PRODUCT START*/
+#mark_product{
+  padding: 0;
+
+}
+#mark_product>div>div{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 0;
+}
+#mark_product>div>div>img{
+    width: 100%;
+}
+.red{
+  background: red;
+}
+.blue{
+  background: blue;
+}
+
+.list_product{
+  display: flex;
+  align-content: space-around;
 }
