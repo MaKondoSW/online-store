@@ -45,6 +45,7 @@ nav > ul > li:hover > a {
   height: 25%;
 }
 .Logo-nav > img{
+  height: 6em !important;
   margin: 2em 5em 0 5em;
 }
 .right-search{
@@ -78,7 +79,7 @@ nav > ul > li:hover > a {
 }
 /*CONTAINER*/
 #main-container{
-  height: 1000px;
+  max-height: calc(100vh - 22rem);
 }
 #main-offers>div, #main-products>div>div {
   margin-top: 12px;
@@ -180,13 +181,11 @@ nav > ul > li:hover > a {
 /*WARRANTY*/
 #warranties{
   background: #34a2e1;
-  margin: 20px 0;
   height: 7em;
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
 }
 #warranties>div{
-  height: 85%;
+  height: 85px;
   display: flex;
   flex-flow: nowrap;
   align-items: center;
@@ -212,14 +211,14 @@ nav > ul > li:hover > a {
 
 /*FOOTER*/
 footer{
-  margin-top: 10px;
-  width: auto;
+  clear: both;
+  height: 22rem;
 }
 #main-footer>div>ul{
   list-style: none;
 }
 #main-footer>div{
-  height: 150px;
+  height: auto;
   text-align: center;
 }
 #main-footer .pay{
@@ -240,6 +239,7 @@ footer{
   background: #363636;
   height: 46px;
   text-align: center;
+
 }
 .social-room{
   position: relative;
@@ -259,7 +259,6 @@ footer{
 /*LIST_PRODUCT START*/
 #mark_product{
   padding: 0;
-
 }
 #mark_product>div>div{
   padding: 0;
@@ -269,16 +268,180 @@ footer{
   margin: 0;
 }
 #mark_product>div>div>img{
-    width: 100%;
+    width: 50%;
+    height: 100%;
+}
+#breadcrumb>div{
+  height: 2em !important;
+}
+#breadcrumb ul>li{
+  display: inline-block;
+  list-style: none;
+
+}
+.aside-filter>ul>li{
+  list-style: none;
+}
+
+.main-products{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.list_product{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.list_product>div{
+  background: gray;
+  margin-top: 1em ;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+.list_product>div>img{
+  height: 100% !important;
+  width: 100% !important;
+}
+/*FILTER-TOP*/
+#filter-top{
+  display: flex;
+  justify-content: flex-end;
+}
+#filter-top>*{
+
+  margin: .8em;
+}
+#filter-top select{
+  font-size: 10px;
+}
+#filter-top>span{
+  margin: 1em;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 10px;
+    transition:  .3s ease;
+}
+ul.pagination li a.active {
+    background-color: #9c7153;
+    color: white;
+    border-radius: 5px;
+}
+ul.pagination li a:hover:not(.active) {
+  background-color: #34a2e1;
+}
+
+#publicy{
+  background-color: #C4C4C4;
+  height: 95px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#publicy>p{
+  margin-top: 30px;
+}
+
+.active {
+    background-color: #9c7153;
+    color: white;
+}
+/*VIEW PRODUCT*/
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+#thumbnails{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+}
+#thumbnails img{
+  height: 80px;
+  width: 80px;
+}
+
+#main-image{
+  margin: 0;
+}
+#main-image img{
+  height: 250px;
+  width: 98%;
+}
+#box-payment{
+  border: 1px solid black;
+
+  height: 250px;
+}
+/*COMMENTS*/
+.stars li{
+  display: inline;
+}
+.stars>ul{
+  list-style: none;
+}
+.details_product{
+  margin-top: 3em;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+.details_product *{
+  margin: 0 15px;
+  text-align: justify;
+}
+.comments_of_product{
+  margin-top: 3em;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+.comments_of_product strong {
+  margin: 0 15px 25px 15px;
+  text-align: justify;
+  padding: 0;
+}
+.comments_of_product p {
+  margin: 0 15px 25px 15px;
+  text-align: justify;
+  padding: 0;
+}
+.comments_of_product h5 {
+  margin: 0 15px 25px 15px;
+  text-align: justify;
+  padding: 0;
+}
+.comments_of_product ul {
+  margin: 0 15px 25px 15px;
+  text-align: justify;
+  padding: 0;
 }
 .red{
   background: red;
+
 }
 .blue{
   background: blue;
-}
 
-.list_product{
-  display: flex;
-  align-content: space-around;
+}
+.green{
+  background: green;
+}
+.heart_plus i{
+  color: red;
+  margin-top: 12px;
 }

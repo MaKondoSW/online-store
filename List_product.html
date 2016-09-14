@@ -29,8 +29,8 @@
       <div class="container row ">
         <nav class="ten columns">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product store</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Product store</a></li>
             <li><a href="#">Abous us</a></li>
             <li><a href="#">Support</a></li>
           </ul>
@@ -43,129 +43,187 @@
       </div>
     </div>
   </header>
-
-
-
   <div id="main-container" class="container">
     <!-- breadcrumb start -->
-    <section id="breadcrumb" class="row">
-      <p>texto > texto </p>
+    <section id="breadcrumb" class="row" >
+      <div class="four columns">
+        <ul>
+          <li>texto &#62;</li>
+          <li>texto &#62;</li>
+          <li>texto</li>
+        </ul>
+      </div>
     </section>
     <!-- breadcrumb end -->
+
     <!-- Mark_product start-->
     <section id="mark_product">
       <div class="row">
-        <div class="six columns ">
-          <img src="http://placehold.it/500x330" alt="first-img">
-        </div>
-        <div class="six columns">
-          <img src="http://placehold.it/500x330" alt="second-img">
+        <div class="twelve columns ">
+          <img src="http://placehold.it/500x330" alt="first-img" />
+          <img src="http://placehold.it/500x330" alt="second-img" />
         </div>
       </div>
     </section>
-    <!-- Mark_product end -->
-<!-- List_product start -->
-    <section id="list_products" class="row ">
-      <div class="twelve columns red">
-        hola
-      </div>
-      <div class="two columns blue">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ul>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ul>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ul>
-      </div>
-      <div class="nine columns">
-        <div class="row list_product">
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-        </div>
-        <div class="row list_product">
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-        </div>
-        <div class="row list_product">
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-          <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
-        </div>
-      </div>
-      <div class="twelve columns red">chao</div>
-    </section>
-<!-- List_product end -->
-<div class="twelve columns red">
-  hola
-</div>
+      <!-- Mark_product end -->
 
-  <footer>
-    <section id="main-footer" class="row container">
-      <div class="four columns">
-        <span>HELP</span>
-        <ul>
-          <li>Delivery</li>
-          <li>Glossary / Definitions</li>
-          <li>Terms and Conditions</li>
-          <li>Notice of Privacy</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
-      <div class="four columns">
-        <span>ABOUT US</span>
-        <ul>
-          <a href="#"><li>Work with us</li></a>
-          <li>Sell your</li>
-          <li>Contact</li>
-          <li>Fashion Glossary</li>
-        </ul>
-      </div>
-      <div class="four columns social-room">
-        <span>SOCIAL ROOM</span>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <a href="#"><i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i></a>
-        </span>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
-        </span>
+      <!-- List_product start -->
+      <section id="list_products" class="row ">
+        <div class="twelve columns " id="filter-top">
+          <span><i class="fa fa-times fa-1x"></i>Clean Filter</span>
+          <span>9 Prodcuts</span>
+          <ul class="pagination">
+            <li><a href="#"><<</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#" class="active">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+          <select class="" name="">
+            <option value="order">Order1</option>
+            <option value="order1">Order2</option>
+            <option value="order2">Order3</option>
+          </select>
 
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>
-        </span>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <a href="#"><i class="fa fa-google-plus fa-stack-1x fa-inverse icon"></i></a>
-        </span>
-        <span class="fa-stack fa-lg ">
-          <i class="fa fa-square fa-stack-2x "></i>
-          <a href="#"><i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i></a>
-        </span>
+        </div>
+        <div class="two columns aside-filter">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <div class="nine columns main-products">
+          <div class="row list_product">
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+          </div>
+          <div class="row list_product">
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+          </div>
+          <div class="row list_product">
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+            <div class="four columns"><img src="http://placehold.it/200x200" alt="" /></div>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <div class="twelve columns " id="filter-top">
+            <span><i class="fa fa-times fa-1x"></i>Clean Filter</span>
+
+            <ul class="pagination">
+              <li><a href="#"><<</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#" class="active">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
+            <select class="" name="">
+              <option value="order">Order1</option>
+              <option value="order1">Order2</option>
+              <option value="order2">Order3</option>
+            </select>
+
+          </div>
+        </div>
+      </section>
+      <section id="warranties" class="row">
+        <div class="four columns">
+          <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="four columns">
+          <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="four columns">
+          <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
+
+      <div id = 'publicy' class="twelve columns">
+        <p>publicy section</p>
       </div>
-      <div class="twelve columns pay">Formas de Pago</div>
-    </section>
-    <section id="legal">
-      <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
-    </section>
-  </footer>
+      <!-- publicity end -->
+    </div>
+    <footer>
+      <section id="main-footer" class="row container">
+        <div class="four columns">
+          <span>HELP</span>
+          <ul>
+            <li>Delivery</li>
+            <li>Glossary / Definitions</li>
+            <li>Terms and Conditions</li>
+            <li>Notice of Privacy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="four columns">
+          <span>ABOUT US</span>
+          <ul>
+            <a href="#"><li>Work with us</li></a>
+            <li>Sell your</li>
+            <li>Contact</li>
+            <li>Fashion Glossary</li>
+          </ul>
+        </div>
+        <div class="four columns social-room">
+          <span>SOCIAL ROOM</span>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <a href="#"><i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i></a>
+          </span>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
+          </span>
+
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>
+          </span>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <a href="#"><i class="fa fa-google-plus fa-stack-1x fa-inverse icon"></i></a>
+          </span>
+          <span class="fa-stack fa-lg ">
+            <i class="fa fa-square fa-stack-2x "></i>
+            <a href="#"><i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i></a>
+          </span>
+        </div>
+        <div class="twelve columns pay">Formas de Pago</div>
+      </section>
+      <section id="legal">
+        <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
+      </section>
+    </footer>
 </body>
 </html>
