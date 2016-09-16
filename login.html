@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Online Store</title>
 </head>
 <body>
@@ -29,8 +29,8 @@
       <div class="container row ">
         <nav class="ten columns">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="list_product.html" >Product store</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list_product.html">Product store</a></li>
             <li><a href="#">Abous us</a></li>
             <li><a href="#">Support</a></li>
           </ul>
@@ -44,88 +44,41 @@
     </div>
   </header>
   <div id="main-container" class="container">
-    <!-- Offers start -->
-    <section id="main-offers" class="row">
-      <div class="four columns offer-left">
-        <div class="offer-hover">
-          Hola
-        </div>
-      </div>
-      <div class="four columns offer-center">
-        <div class="offer-hover">
-          Producto
-        </div>
-      </div>
-      <div class="four columns offer-right">
-        <div class="offer-hover">
-          Oferta
-        </div>
-      </div>
-    </section>
-    <!-- Offers end -->
-    <section id="main-products">
-      <div id="first-products"class="row">
-        <div class="four columns product-left">
-          <img src="http://placehold.it/280x330" alt="first-img">
-        </div>
-        <div class="four columns product-center">
-          <img src="http://placehold.it/280x330" alt="second-img">
-        </div>
-        <div class="four columns product-right">
-          <img src="http://placehold.it/280x330" alt="third-img">
-        </div>
-      </div>
-      <div id="second-products"class="row ">
-        <div class="three columns product-right">
-          <img src="http://placehold.it/215x330" alt="first-img">
-        </div>
-        <div class="six columns product-center">
-          <img src="http://placehold.it/440x330" alt="second-img">
-        </div>
-        <div class="three columns product-left">
-          <img src="http://placehold.it/215x330" alt="third-img">
-        </div>
-      </div>
-    </section>
-    <section id="warranties" class="row">
+    <!-- breadcrumb start -->
+    <section id="breadcrumb" class="row" >
       <div class="four columns">
-        <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-      <div class="four columns">
-        <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-      <div class="four columns">
-        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
+        <ul>
+          <li>texto &#62;</li>
+          <li>texto &#62;</li>
+          <li>texto</li>
+        </ul>
       </div>
     </section>
-    <hr>
-    <section id="interests" class="row">
-
-      <div class="three columns div-position">
-        <img src="http://placehold.it/200x200" alt="" />
-      </div>
-      <div class="three columns div-position">
-        <img src="http://placehold.it/200x200" alt="" />
-      </div>
-      <div class="three columns div-postiion">
-        <img src="http://placehold.it/200x200" alt="" />
-      </div>
-      <div class="three columns div-postiion">
-        <!-- <img src="http://placehold.it/200x200" alt="" /> -->
+    <!-- breadcrumb end -->
+    <!-- Box login -->
+    <section id="login-container" class="row ">
+      <div class="twelve columns box-login">
+        <div class="twelve columns username">
+          <form action="">
+            <label>Username*</label>
+            <input type="textfield" name="name" value="">
+            <label>Password*</label>
+            <input type="textfield" name="name" value="">
+          </form>
+        </div>
+        <hr>
+        <div class="twelve columns buttons-login">
+          <input type="button" name="name" value="Login">
+          <a href="register.html">
+            <input type="button" name="name" value="Register">
+          </a>
+        </div>
       </div>
     </section>
-
-  </div>
-
+    <div id = 'publicy' class="twelve columns">
+      <p>publicy section</p>
+    </div>
+      <!-- publicity end -->
   <footer>
     <section id="main-footer" class="row container">
       <div class="four columns">
@@ -157,7 +110,6 @@
           <i class="fa fa-square fa-stack-2x"></i>
           <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
         </span>
-
         <span class="fa-stack fa-lg">
           <i class="fa fa-square fa-stack-2x"></i>
           <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>

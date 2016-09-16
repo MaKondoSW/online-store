@@ -1,4 +1,4 @@
-Q<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@ Q<!DOCTYPE html>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Online Store</title>
 </head>
 <body>
@@ -18,7 +18,7 @@ Q<!DOCTYPE html>
           <a class="Logo-nav" href="#" ><img src="http://placehold.it/150x100" alt="Logo" /></a>
         </div>
         <div class="five columns right-search">
-          <a href="#">Login</a>
+          <a href="login.html">Login</a>
           <a href="#">Register</a>
           <br>
           <input type="search" placeholder="Enter product name..."/>
@@ -29,8 +29,8 @@ Q<!DOCTYPE html>
       <div class="container row ">
         <nav class="ten columns">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product store</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list_product.html">Product store</a></li>
             <li><a href="#">Abous us</a></li>
             <li><a href="#">Support</a></li>
           </ul>
@@ -60,48 +60,71 @@ Q<!DOCTYPE html>
     <!-- List_product start -->
     <section id="list_products" class="row ">
 
-      <div id="box-gallery" class="six columns">
+      <div id="box-gallery" class="seven columns">
         <div class="row justify-center">
           <div class="three columns " id="thumbnails">
-            <img src="" alt="Product">
-            <img src="" alt="Product">
-            <img src="" alt="Product">
+            <img src="http://placehold.it/80x80" alt="Product">
+            <img src="http://placehold.it/80x80" alt="Product">
+            <img src="http://placehold.it/80x80" alt="Product">
           </div>
-          <div class="nine columns justify-center" id="main-image">
-            <img src="" alt="Product">
+          <div class="six columns justify-center" id="main-image">
+            <img src="http://placehold.it/300x250" alt="Product">
           </div>
         </div>
       </div>
-      <div id="box-payment" class="five columns ">
+      <div id="box-payment" class="four columns ">
         <div class="row ">
-          <div class="ten columns red">
+          <div class="ten columns box-mark">
             <h5>MARK</h5>
-            <p>name_product</p>
+            <span>name_product</span>
           </div>
           <div class="one columns heart_plus">
             <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="row">
-          <div class="six columns green">
-            <select name="" id="">
+        <div class="row box-price">
+          <div class="seven columns quantity">
+            <span>Quantity</span>
+            <select name="">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
-            <div>
-              Quantity
-            </div>
           </div>
-          <div class="six columns red">
-            Price
+          <div class="five columns price">
+            <span>PRICE</span>
+            <br>
+            <p>$10000</p>
           </div>
         </div>
         <div class="row">
-          <div class="twelve columns blue">como</div>
+          <div class="twelve columns justify-center">
+            <button class="btn">ADD</button>
+          </div>
         </div>
         <div class="row">
-          <div class="twelve columns red">como</div>
+          <div id="share" class="twelve columns box-share justify-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <a href="#"><i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i></a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <a href="#"><i class="fa fa-google-plus fa-stack-1x fa-inverse icon"></i></a>
+            </span>
+            <span class="fa-stack fa-lg ">
+              <i class="fa fa-square fa-stack-2x "></i>
+              <a href="#"><i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i></a>
+            </span>
+          </div>
         </div>
       </div>
       <article class="twelve columns details_product">
@@ -165,96 +188,96 @@ Q<!DOCTYPE html>
             <li><i class="fa fa-star fa-1x" aria-hidden="true"></i></li>
             <li><i class="fa fa-star fa-1x" aria-hidden="true"></i></li>
             <li><i class="fa fa-star fa-1x" aria-hidden="true"></i></li>
-            <li<i class="fa fa-star-half-o fa-1x" aria-hidden="true"></i><li>
-              <li><i class="fa fa-star-o fa-1x" aria-hidden="true"></i></li>
-            </ul>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit.
-          </p>
-        </article>
-      </section>
-      <section id="warranties" class="row justify-center">
-        <div class="four columns">
-          <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+            <li><i class="fa fa-star-half-o fa-1x" aria-hidden="true"></i><li>
+            <li><i class="fa fa-star-o fa-1x" aria-hidden="true"></i></li>
+          </ul>
         </div>
-        <div class="four columns">
-          <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="four columns">
-          <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-      </section>
-
-      <div id = 'publicy' class="twelve columns">
-        <p>publicy section</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit.
+        </p>
+      </article>
+    </section>
+    <section id="warranties" class="row justify-center">
+      <div class="four columns">
+        <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
       </div>
-      <!-- publicity end -->
+      <div class="four columns">
+        <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="four columns">
+        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    </section>
+
+    <div id = 'publicy' class="twelve columns">
+      <p>publicy section</p>
     </div>
-    <footer>
-      <section id="main-footer" class="row container">
-        <div class="four columns">
-          <span>HELP</span>
-          <ul>
-            <li>Delivery</li>
-            <li>Glossary / Definitions</li>
-            <li>Terms and Conditions</li>
-            <li>Notice of Privacy</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-        <div class="four columns">
-          <span>ABOUT US</span>
-          <ul>
-            <a href="#"><li>Work with us</li></a>
-            <li>Sell your</li>
-            <li>Contact</li>
-            <li>Fashion Glossary</li>
-          </ul>
-        </div>
-        <div class="four columns social-room">
-          <span>SOCIAL ROOM</span>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <a href="#"><i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i></a>
-          </span>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
-          </span>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>
-          </span>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <a href="#"><i class="fa fa-google-plus fa-stack-1x fa-inverse icon"></i></a>
-          </span>
-          <span class="fa-stack fa-lg ">
-            <i class="fa fa-square fa-stack-2x "></i>
-            <a href="#"><i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i></a>
-          </span>
-        </div>
-        <div class="twelve columns pay">Formas de Pago</div>
-      </section>
-      <section id="legal">
-        <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
-      </section>
-    </footer>
-  </body>
-  </html>
+      <!-- publicity end -->
+  </div>
+  <footer>
+    <section id="main-footer" class="row container">
+      <div class="four columns">
+        <span>HELP</span>
+        <ul>
+          <li>Delivery</li>
+          <li>Glossary / Definitions</li>
+          <li>Terms and Conditions</li>
+          <li>Notice of Privacy</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="four columns">
+        <span>ABOUT US</span>
+        <ul>
+          <a href="#"><li>Work with us</li></a>
+          <li>Sell your</li>
+          <li>Contact</li>
+          <li>Fashion Glossary</li>
+        </ul>
+      </div>
+      <div class="four columns social-room">
+        <span>SOCIAL ROOM</span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <a href="#"><i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i></a>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <a href="#"><i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i></a>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <a href="#"><i class="fa fa-pinterest-p fa-stack-1x fa-inverse icon"></i></a>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <a href="#"><i class="fa fa-google-plus fa-stack-1x fa-inverse icon"></i></a>
+        </span>
+        <span class="fa-stack fa-lg ">
+          <i class="fa fa-square fa-stack-2x "></i>
+          <a href="#"><i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i></a>
+        </span>
+      </div>
+      <div class="twelve columns pay">Formas de Pago</div>
+    </section>
+    <section id="legal">
+      <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
+    </section>
+  </footer>
+</body>
+</html>
