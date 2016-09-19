@@ -44,7 +44,7 @@
     </div>
   </header>
 
-  <div id="main-container" class="container">
+  <div id="main-container_cart" class="container">
     <!-- breadcrumb start -->
     <section id="breadcrumb" class="row" >
       <div class="four columns">
@@ -55,90 +55,85 @@
         </ul>
       </div>
     </section>
-     <div class="twelve columns cart">
+    <section id="list_cart">
       <div class="row">
-         <div class="seven columns items">
+        <div class="three columns" >
           <img src="http://placehold.it/150x150" alt="product">
+        </div>
+        <div class="two columns items" >
           <h5>MARK</h5>
           <span>name_product</span>
-            <div class="ten columns quantity">
-              color = *****
-              <br>
-              size = **
-              <br>
-              <span>Quantity</span>
-              <select name="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-         </div>
-         <div class="five columns">
-           <span># available</span>
-           <br>
-           <p>$10000</p>
-         </div>
-       </div>
-       <hr>
-       <div class="row">
-          <div class="seven columns items">
-           <img src="http://placehold.it/150x150" alt="product">
-           <h5>MARK</h5>
-           <span>name_product</span>
-             <div class="ten columns quantity">
-               color = *****
-               <br>
-               size = **
-               <br>
-               <span>Quantity</span>
-               <select name="">
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-               </select>
-             </div>
+        </div>
+        <div class="three columns " >
+          <p>color = <span>****</span></p>
+          <p>size =  <span>****</span></p>
+          <p>Quantity
+            <select name="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </p>
+        </div>
+        <div class="four columns available ">
+          <p># available</p>
+          <p>$10000</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="three columns" >
+          <img src="http://placehold.it/150x150" alt="product">
+        </div>
+        <div class="two columns items">
+          <h5>MARK</h5>
+          <span>name_product</span>
+        </div>
+        <div class="three columns  " >
+          <p>color = <span>****</span></p>
+          <p>size =  <span>****</span></p>
+          <p>Quantity
+            <select name="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </p>
+        </div>
+        <div class="four columns available">
+          <p># available</p>
+          <p>$10000</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row shipping">
+        <div class="four columns">
+          <div class="twelve columns total-shipping">
+            <p>Shiping*   <span> $5000</span></p>
           </div>
-          <div class="five columns">
-            <span># available</span>
-            <br>
-            <p>$10000</p>
+          <div class="twelve columns total-shipping">
+            <p>TOTAL <span>$10000</span></p>
+          </div>
+          <div class="twelve columns proceed_to_checkout">
+            <button class="btn3">Proceed to Checkout</button>
+          </div>
+          <div class="twelve columns proceed_to_checkout">
+            <button class="btn2">keep buying</button>
+          </div>
+          <div class="twelve columns estimated">
+            *Estimated Shipping
           </div>
         </div>
-        <hr>
-        <div id="shiping" class="row">
-          <div class="four columns">
-            <div class="twelve columns">
-              <span>Shiping* </span>
-              <span>$ 5000</span>
-            </div>
-            <div class="twelve columns">
-              <span>TOTAL </span>
-              <span>$ 10000</span>
-            </div>
-            <div class="twelve columns proceed_to_checkout">
-              Proceed to Checkout
-            </div>
-            <div class="twelve columns keep_buying">
-              keep buying
-            </div>
-            <div class="twelve columns estimated">
-              *Estimated Shipping
-            </div>
-          </div>
-        </div>
-
-     </div>
-   </div>
-
-
-    <footer>
-      <section id="main-footer" class="row container">
-         <div class="twelve columns pay">Formas de Pago</div>
-      </section>
-      <section id="legal">
-        <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
-      </section>
-    </footer>
-  </body>
-  </html>
+      </div>
+    </section>
+  </div>
+  <footer id="footer_cart">
+    <section id="main-footer" class="row container">
+      <div class="twelve columns pay">Formas de Pago</div>
+    </section>
+    <section id="legal">
+      <span>Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
+    </section>
+  </footer>
+</body>
+</html>

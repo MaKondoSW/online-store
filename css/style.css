@@ -83,6 +83,9 @@ nav > ul > li:hover > a {
 #main-container{
   max-height: calc(100vh - 22rem);
 }
+#main-container_cart{
+  max-height: calc(100vh - 0);
+}
 #main-offers>div, #main-products>div>div {
   margin-top: 12px;
 }
@@ -183,13 +186,12 @@ nav > ul > li:hover > a {
 /*WARRANTY*/
 #warranties{
   background: #34a2e1;
-  height: 7em;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #warranties>div{
-  height: 85px;
   display: flex;
-  flex-flow: nowrap;
   align-items: center;
   margin: .8em;
 }
@@ -215,6 +217,10 @@ nav > ul > li:hover > a {
 footer{
   clear: both;
   height: 22rem;
+}
+#footer_cart{
+  clear: both;
+  height: .2rem;
 }
 #main-footer>div>ul{
   list-style: none;
@@ -244,9 +250,16 @@ footer{
   color: white !important;
 }
 .social-room{
-  position: relative;
-  width: 8em !important;
-  left: 5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.icons-social{
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
 .fa-square{
   color: #34a2e1 !important;
@@ -292,25 +305,21 @@ footer{
 .aside-filter>ul>li{
   list-style: none;
 }
-
 .main-products{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-items:center;
 }
-
-
 .list_product a{
   width: 100%;
   height: 100%;
+  background: black;
 }
-.list_product div{
-  margin: 1.5em;
-}
+
 .list_product img{
-  height: 12.5em ;
-  width: 12.5em ;
+  height: 200px;
+  width: 200px;
 }
 /*FILTER-TOP*/
 #filter-top{
@@ -514,27 +523,169 @@ ul.pagination li a:hover:not(.active) {
 .items{
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-flow: wrap;
 }
 .proceed_to_checkout{
-  margin-top: 1em;
-  background: #34a2e1;
-  display: flex;
-  justify-content: center;
-}
-.keep_buying{
-  margin-top: 1em;
-  border:2.5px solid #34a2e1;
-  display: flex;
-  justify-content: center;
-}
-.estimated{
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-}
-#shiping{
+  margin-top: .3em;
   display: flex;
   justify-content: flex-end;
-  /*background: black;*/
+}
+.proceed_to_checkout .btn2{
+  border:2.5px solid #34a2e1;
+}
+.proceed_to_checkout .btn3{
+  background: #34a2e1;
+}
+
+.estimated{
+  display: flex;
+  justify-content: flex-end;
+}
+.shipping{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-shipping{
+  word-spacing: 8.5em;
+  text-align: right;
+}
+.available{
+  margin-top: 25px;
+  text-align: right;
+}
+#list_cart{
+  margin: 3em 0;
+}
+#cart_empty{
+  margin-top: 8em;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about_us_content{
+  border: 1px solid black;
+}
+.list_about_us ul{
+  font-size: 1.2em;
+  margin-top: 4em;
+  list-style: none;
+}
+.list_about_us ul a{
+  color: #9c7153;
+	text-decoration: none;
+}
+.list_about_us{
+  display:flex;
+  justify-content: center;
+}
+.text_about_us h4{
+  margin-top: 1em;
+  text-align: center;
+}
+.text_about_us p{
+  text-align: justify;
+  margin-right: 2.5em;
+  margin-top: 2em;
+}
+.text_about_us{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#first{
+  width: 43%;
+}
+.line{
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+}
+#contact_information{
+  margin: 2em;
+}
+.contact_us{
+  display: flex;
+  flex-direction: column;
+  background: #e2e2e2;
+  border-radius: 10px;
+  padding: 1em;
+  padding-top: 1em;
+}
+.contact_us h3{
+  text-align: center;
+}
+.contact_us_information{
+  margin-top: 2em;
+  text-align: justify;
+}
+#button_send{
+  margin: 0 auto;
+}
+.btn_send {
+    margin-top: -1.3em;
+    width: 100%;
+    background: #34a2e1;
+}
+.data{
+  margin-left: 0;
+}
+.contact_us textarea{
+  resize: none;
+}
+#my_account{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2em;
+}
+.list_account{
+  width: 20%;
+  margin-left: 1.5em;
+}
+.list_account ul{
+  position: absolute;
+  list-style: none;
+  font-size: 10px;
+}
+.list_account ul a{
+  text-decoration: none;
+  margin-left: 1em;
+}
+.account_element{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: .7em;
+}
+.account{
+  display: flex;
+  flex-direction: column;
+  background:  #e2e2e2;
+  border-radius: 20px;
+}
+
+.title_account{
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.account_data{
+  display: flex;
+  justify-content: center;
+}
+.description_account{
+  text-align: justify;
+  margin: 0 .5em;
+}
+.fl_rgt{
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
+.greeting_user{
+  margin: .3em 1em !important;
+}
+.greeting_user p{
+  margin-bottom: 0;
 }
