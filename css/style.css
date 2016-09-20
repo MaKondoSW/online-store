@@ -98,7 +98,7 @@ nav > ul > li:hover > a {
 }
 #main-products>div>div>img{
   height: 97%;
-  width:  95%;
+  width:  97%;
 }
 #main-products .product-center>img{
   height: 97%;
@@ -188,7 +188,7 @@ nav > ul > li:hover > a {
   background: #34a2e1;
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 #warranties>div{
   display: flex;
@@ -208,9 +208,10 @@ nav > ul > li:hover > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3px;
-  margin-bottom: 2em;
-  height: 210px;
+  margin-bottom: 2rem;
+}
+.div_position img{
+  width: 100%;
 }
 
 /*FOOTER*/
@@ -226,7 +227,6 @@ footer{
   list-style: none;
 }
 #main-footer>div{
-  height: auto;
   text-align: center;
 }
 #main-footer .pay{
@@ -251,9 +251,8 @@ footer{
 }
 .social-room{
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
 }
 .icons-social{
   display: flex;
@@ -633,6 +632,7 @@ ul.pagination li a:hover:not(.active) {
 .contact_us textarea{
   resize: none;
 }
+/*PROFILE*/
 #my_account{
   display: flex;
   flex-wrap: nowrap;
@@ -642,6 +642,7 @@ ul.pagination li a:hover:not(.active) {
   width: 20%;
   margin-left: 1.5em;
 }
+
 .list_account ul{
   position: absolute;
   list-style: none;
@@ -654,10 +655,12 @@ ul.pagination li a:hover:not(.active) {
 .account_element{
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border: 1px solid #CCC;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: .7em;
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
 }
 .account{
   display: flex;
@@ -668,7 +671,6 @@ ul.pagination li a:hover:not(.active) {
 
 .title_account{
   border-bottom: 2px solid black;
-  text-align: center;
 }
 .account_data{
   display: flex;
@@ -688,4 +690,139 @@ ul.pagination li a:hover:not(.active) {
 }
 .greeting_user p{
   margin-bottom: 0;
+}
+/* ORDERS */
+.item_result_list{
+}
+.items_list{
+}
+.item_list{
+  list-style-type: none;
+  margin: 1px 1em;
+  border-bottom: 1px dotted #CCC;
+  border-top: 1px dotted #CCC;
+
+}
+.item_list ul{
+  list-style: none;
+}
+.item_list a{
+  text-decoration: none;
+}
+.filter_order{
+ height:20px;
+ position:relative;
+}
+.filter_orders{
+  display: flex;
+  justify-content: flex-end;
+  background: #505050;
+  padding-top: 1em;
+  border-radius: 20px 20px 0 0;
+}
+.filter_orders>*{
+  margin:.5em;
+
+}
+.filter_orders span{
+   color: #fff;
+}
+.filter_orders select {
+  font-size: 14px;
+  width: 120px;
+
+}
+.filter_orders select:focus{
+  outline: none;
+}
+/*ADDRESS*/
+.address_element{
+  border: 1px solid #CCC;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: .7em;
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.description_address{
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+}
+.description_address p{
+  margin: 0;
+}
+.title_center{
+  text-align: center;
+}
+.div_btn_address{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn_address{
+  margin: 1em;
+  padding: 0 15px;
+  background: #CCC;
+  color: #fff;
+}
+.div_btn_right{
+  display: flex;
+  justify-content: flex-end;
+}
+.box-news{
+  border-top: 2px dotted #ccc;
+  padding-top: 2em;
+}
+
+/*Medias Query*/
+/* Larger than tablet */
+@media (max-width: 750px) {
+  #warranties{
+    flex-direction: column;
+    align-items: center;
+    margin: .5em auto !important;
+  }
+  #warranties .one-third.column {
+    width: 80%;
+  }
+  #warranties>div>p{
+    margin: 0 !important;
+  }
+  .social-room{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+@media (min-width: 550px) {
+  .div_position img{
+    width: 100%;
+
+  }
+  .social-room{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px !important;
+    margin-top: 1rem;
+  }
+  #main-footer>div>ul>li{
+    text-align: center;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 549px) {
+  .div_position img{
+    width: 60%;
+  }
+}
+  /*.list_account{
+    visibility: hidden;
+    width: 0 !important;
+  }
+  #my_account{
+    margin: 2em auto;
+  }
+  #my_account .ten{
+    width: 100% !important;
+    margin-left: 0;
+  }*/
 }
