@@ -308,6 +308,9 @@ footer{
     width: 50%;
     height: 100%;
 }
+#breadcrumb{
+  border-bottom: 1px dotted #CCC;
+}
 #breadcrumb>div{
   height: 2em !important;
 }
@@ -450,21 +453,27 @@ ul.pagination li a:hover:not(.active) {
 }
 #main-image{
   display: flex;
-  width: 59.6666666667%;
+  width: 100%;
+  flex-wrap: wrap;
 }
 #main-image img{
   width: 100%;
+  height: 100%;
 }
+
 #box-payment{
   display: flex;
   flex-wrap: wrap;
   width: 33.6666666667%;
   margin: 0;
 }
-
+#box-product .btn{
+  width: 70%;
+  height: 5rem;
+  font-size: 15px;
+}
 .box-mark>h5{
   margin-bottom: -1rem;
-
 }
 .heart_plus{
   display: flex;
@@ -475,8 +484,6 @@ ul.pagination li a:hover:not(.active) {
   color: red;
   margin-top: 12px;
 }
-
-
 .box-price{
   margin-top: 1.8em;
   margin-left: 1rem;
@@ -497,12 +504,8 @@ ul.pagination li a:hover:not(.active) {
   font-weight: bolder;
   margin: 0;
 }
-.quantity{
-  margin-top: 1.55em;
-}
+
 .btn{
-  margin-top: -1.3em;
-  width: 80%;
   background: #34a2e1;
 }
 .box-share{
@@ -725,31 +728,34 @@ ul.pagination li a:hover:not(.active) {
   text-decoration: none;
   margin-left: 1em;
 }
-.account_element{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #CCC;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: .7em;
-  height: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
-}
-.account{
+
+.box-account{
   display: flex;
   flex-direction: column;
   background:  #e2e2e2;
   border-radius: 20px;
 }
 
-.title_account{
-  border-bottom: 2px solid black;
-}
-.account_data{
+.box-account-data{
   display: flex;
   justify-content: center;
 }
-.description_account{
+.box-account-element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #CCC;
+  margin:1.5em !important;
+  font-size: .7em;
+  width: 80%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.title-account{
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+.description-account{
+  width: 100%;
   text-align: justify;
   margin: 0 .5em;
 }
@@ -757,6 +763,7 @@ ul.pagination li a:hover:not(.active) {
   float: right;
   text-decoration: none;
   color: #000;
+  margin-right: 1rem;
 }
 .greeting_user{
   margin: .3em 1em !important;
@@ -814,7 +821,6 @@ ul.pagination li a:hover:not(.active) {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: .7em;
-  height: 100%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
 }
 .description_address{
@@ -843,8 +849,11 @@ ul.pagination li a:hover:not(.active) {
   justify-content: flex-end;
 }
 .box-news{
-  border-top: 2px dotted #ccc;
   padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
 }
 
 /*Medias Query*/
@@ -878,6 +887,7 @@ ul.pagination li a:hover:not(.active) {
     justify-content: center;
     margin-top: 1rem;
   }
+
   .main-products{
     width: 100% !important;
   }
@@ -901,13 +911,18 @@ ul.pagination li a:hover:not(.active) {
     justify-content: center;
     align-items: center;
   }
+    /*VIEW_PRODUCT*/
   #box-product{
     justify-content: center;
+    align-items: center;
   }
   #box-gallery{
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  #main-image{
+    justify-content: center;
   }
   #box-payment{
     display: flex;
@@ -915,8 +930,37 @@ ul.pagination li a:hover:not(.active) {
     width: 50%;
     margin: 4rem 0;
   }
+/*ACCOUNT*/
+  .list_account{
+    display: none;
+  }
+  #my_account{
 
-
+    justify-content: center;
+  }
+  .box-account{
+    width: 100% !important;
+    margin-left: 0;
+  }
+  /*ADDRESS*/
+  .box-address{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .account-data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .address_element{
+    width: 100%;
+  }
+  .div_btn_right{
+    justify-content: center;
+    width: 70% !important;
+  }
 }
 @media (max-width: 661px){
   header{
@@ -943,6 +987,117 @@ ul.pagination li a:hover:not(.active) {
   #box-cart{
     display: none;
   }
+  /*VIEW_PRODUCT*/
+  #box-product{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #box-gallery{
+    justify-content: center;
+    width: 80%;
+  }
+  .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid #666;
+      margin: 0 8px 0 0;
+  }
+  .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: #666;
+  }
+  #thumbnails{
+    display: none;
+  }
+  #main-image{
+    width: 100%;
+  }
+  #box-payment{
+    width: 100%;
+    margin: 4rem 0;
+  }
+  #box-payment>div{
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ccc;
+  }
+  .box-mark{
+    width: 83.33333%;
+  }
+  .heart_plus{
+    font-size: 2rem;
+    width: 11.6666667%;
+  }
+  .box-price{
+    padding-top: 1rem;
+    margin-left: 0;
+  }
+  .price{
+    font-size: 2rem;
+    justify-content: flex-end;
+    width: 48.333333%;
+  }
+  .quantity{
+    width: 50.333333%;
+    margin-top: 0;
+  }
+  #box-product .justify-center{
+    margin-top:  3rem;
+  }
+  #box-product .btn{
+    width: 70%;
+    height: 8rem;
+    font-size: 17px;
+  }
+  .box-share{
+    border:none;
+  }
+  .box-share>*{
+    margin: .3em;
+  }
+  /*ACCOUNT*/
+    .box-account{
+      width: 80% !important;
+    }
+    .box-account-data{
+      flex-direction: column;
+      align-items: center;
+    }
+    .box-account-element{
+      width: 90% !important;
+    }
+
+    .item_list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item_list li{
+    margin: 5px;
+    }
+    .items_order {
+      display: inline-flex;
+      flex-direction: column;
+      width: 100% !important;
+      margin: 0;
+      margin-left: 4% !important;
+    }
+    .items_order_middle{
+      display: flex;
+      flex-direction: column;
+
+      width: 45.33333% !important;
+    }
+    .items_order_middle{
+      display: flex;
+      margin-left: 4%;
+      flex-direction: column;
+    }
+    .items_order_middle li{
+      margin: 0;
+    }
 }
 @media (min-width: 660px){
     .nav2 .one-third.column{
@@ -951,6 +1106,7 @@ ul.pagination li a:hover:not(.active) {
     .nav2 .two-thirds.column{
       width: 80.3333333333% !important;
     }
+
 }
 @media (min-width: 550px) {
 
@@ -968,9 +1124,11 @@ ul.pagination li a:hover:not(.active) {
     text-align: center;
     line-height: 1.6rem;
   }
+
 }
 
 @media (max-width: 549px) {
+
   .nav2 .two-thirds.column{
     width: 100% !important;
   }
@@ -994,4 +1152,6 @@ ul.pagination li a:hover:not(.active) {
   .div_position img{
     width: 100%;
   }
+
+
 }
