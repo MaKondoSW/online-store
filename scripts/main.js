@@ -11,9 +11,7 @@ var App = React.createClass({
   render : function(){
     return(
       <div>
-        <h1>
-          React For the Win
-        </h1>
+        <h1>Hola mundo</h1>
       </div>
     )
   }
